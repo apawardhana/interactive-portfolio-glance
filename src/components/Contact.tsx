@@ -108,10 +108,10 @@ const Contact = () => {
               </div>
               <div className="space-y-4">
                 <p className="text-gray-600">
-                  Email: <a href="mailto:contact@example.com" className="text-accent hover:underline">contact@example.com</a>
+                  Email: <a href="mailto:apaw.sugiri@gmail.com" className="text-accent hover:underline">apaw.sugiri@gmail.com</a>
                 </p>
                 <p className="text-gray-600">
-                  WhatsApp: <a href="https://wa.me/1234567890" className="text-accent hover:underline">+62 123 4567 890</a>
+                  WhatsApp: <a href="https://wa.me/6288973493507" className="text-accent hover:underline">+62 889-7349-3507</a>
                 </p>
               </div>
             </div>
