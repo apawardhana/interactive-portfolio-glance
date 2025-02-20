@@ -4,8 +4,10 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { useState } from "react";
+import { useTranslation } from "../hooks/useTranslation";
 
 const Contact = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -14,7 +16,6 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission logic here
     console.log("Form submitted:", formData);
   };
 
@@ -28,10 +29,9 @@ const Contact = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="heading-lg">Hubungi Saya</h2>
+          <h2 className="heading-lg">{t("contact.title")}</h2>
           <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-            Tertarik untuk bekerja sama? Silakan hubungi saya melalui form di bawah
-            ini atau melalui kontak yang tersedia.
+            {t("contact.description")}
           </p>
         </motion.div>
 
@@ -46,7 +46,7 @@ const Contact = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">
-                  Nama
+                  {t("contact.form.name")}
                 </label>
                 <Input
                   id="name"
@@ -54,13 +54,13 @@ const Contact = () => {
                   onChange={(e) =>
                     setFormData({ ...formData, name: e.target.value })
                   }
-                  placeholder="Masukkan nama Anda"
+                  placeholder={t("contact.form.placeholders.name")}
                   required
                 />
               </div>
               <div>
                 <label htmlFor="email" className="block text-sm font-medium mb-2">
-                  Email
+                  {t("contact.form.email")}
                 </label>
                 <Input
                   id="email"
@@ -69,13 +69,13 @@ const Contact = () => {
                   onChange={(e) =>
                     setFormData({ ...formData, email: e.target.value })
                   }
-                  placeholder="Masukkan email Anda"
+                  placeholder={t("contact.form.placeholders.email")}
                   required
                 />
               </div>
               <div>
                 <label htmlFor="message" className="block text-sm font-medium mb-2">
-                  Pesan
+                  {t("contact.form.message")}
                 </label>
                 <Textarea
                   id="message"
@@ -83,13 +83,13 @@ const Contact = () => {
                   onChange={(e) =>
                     setFormData({ ...formData, message: e.target.value })
                   }
-                  placeholder="Tuliskan pesan Anda"
+                  placeholder={t("contact.form.placeholders.message")}
                   required
                   className="min-h-[150px]"
                 />
               </div>
               <Button type="submit" className="w-full">
-                Kirim Pesan
+                {t("contact.form.submit")}
               </Button>
             </form>
           </motion.div>
@@ -103,10 +103,8 @@ const Contact = () => {
           >
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl font-semibold mb-4">Kontak Langsung</h3>
-                <p className="text-gray-600">
-                  Anda juga dapat menghubungi saya melalui:
-                </p>
+                <h3 className="text-2xl font-semibold mb-4">{t("contact.direct.title")}</h3>
+                <p className="text-gray-600">{t("contact.direct.description")}</p>
               </div>
               <div className="space-y-4">
                 <p className="text-gray-600">

@@ -8,41 +8,47 @@ import {
   Calculator,
   ListTodo,
 } from "lucide-react";
+import { useTranslation } from "../hooks/useTranslation";
 
-const services = [
-  {
-    icon: FileSpreadsheet,
-    title: "Data Entry & Spreadsheet Management",
-    description: "Pengelolaan data dan spreadsheet yang akurat dan terorganisir",
-  },
-  {
-    icon: Mail,
-    title: "Email & Calendar Management",
-    description: "Pengelolaan email dan jadwal untuk meningkatkan produktivitas",
-  },
-  {
-    icon: Database,
-    title: "Web Research & Data Collection",
-    description: "Penelitian web dan pengumpulan data yang komprehensif",
-  },
-  {
-    icon: Cloud,
-    title: "File Organization & Cloud Management",
-    description: "Pengelolaan file dan layanan cloud yang efisien",
-  },
-  {
-    icon: Calculator,
-    title: "Basic Accounting & Invoicing",
-    description: "Pengelolaan keuangan dasar dan pembuatan invoice",
-  },
-  {
-    icon: ListTodo,
-    title: "Task & Project Management",
-    description: "Manajemen tugas dan proyek yang terstruktur",
-  },
-];
+const serviceIcons = {
+  dataEntry: FileSpreadsheet,
+  email: Mail,
+  research: Database,
+  cloud: Cloud,
+  accounting: Calculator,
+  task: ListTodo,
+};
 
 const Services = () => {
+  const { t } = useTranslation();
+
+  const services = [
+    {
+      key: "dataEntry",
+      icon: serviceIcons.dataEntry,
+    },
+    {
+      key: "email",
+      icon: serviceIcons.email,
+    },
+    {
+      key: "research",
+      icon: serviceIcons.research,
+    },
+    {
+      key: "cloud",
+      icon: serviceIcons.cloud,
+    },
+    {
+      key: "accounting",
+      icon: serviceIcons.accounting,
+    },
+    {
+      key: "task",
+      icon: serviceIcons.task,
+    },
+  ];
+
   return (
     <section id="services" className="section-padding">
       <div className="max-w-6xl mx-auto">
@@ -53,10 +59,9 @@ const Services = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="heading-lg">Layanan Saya</h2>
+          <h2 className="heading-lg">{t("services.title")}</h2>
           <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
-            Saya menyediakan berbagai layanan virtual assistant untuk membantu
-            mengoptimalkan operasional bisnis Anda.
+            {t("services.description")}
           </p>
         </motion.div>
 
@@ -71,8 +76,12 @@ const Services = () => {
               className="glass-card hover-card rounded-xl p-6"
             >
               <service.icon className="h-12 w-12 text-accent mb-4" />
-              <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-              <p className="text-gray-600">{service.description}</p>
+              <h3 className="text-xl font-semibold mb-2">
+                {t(`services.items.${service.key}.title`)}
+              </h3>
+              <p className="text-gray-600">
+                {t(`services.items.${service.key}.description`)}
+              </p>
             </motion.div>
           ))}
         </div>

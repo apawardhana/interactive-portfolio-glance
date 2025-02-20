@@ -1,0 +1,70 @@
+
+{
+  "hero": {
+    "title": "Virtual Assistant untuk",
+    "subtitle": "Kebutuhan Digital Anda",
+    "description": "Saya membantu Anda mengelola tugas administratif dan digital dengan efisien, sehingga Anda bisa fokus pada pertumbuhan bisnis Anda.",
+    "contact": "Hubungi Saya",
+    "portfolio": "Lihat Portfolio"
+  },
+  "about": {
+    "title": "Tentang Saya",
+    "description": "Sebagai Virtual Assistant berpengalaman, saya membantu klien mengelola tugas administratif dan digital mereka dengan efisien dan profesional.",
+    "experience": {
+      "title": "Pengalaman",
+      "description": "Dengan pengalaman lebih dari 3 tahun sebagai Virtual Assistant, saya telah membantu berbagai klien dari startup hingga perusahaan menengah dalam mengelola tugas administratif dan digital mereka."
+    },
+    "skills": {
+      "title": "Keahlian"
+    }
+  },
+  "services": {
+    "title": "Layanan Saya",
+    "description": "Saya menyediakan berbagai layanan virtual assistant untuk membantu mengoptimalkan operasional bisnis Anda.",
+    "items": {
+      "dataEntry": {
+        "title": "Entri Data & Manajemen Spreadsheet",
+        "description": "Pengelolaan data dan spreadsheet yang akurat dan terorganisir"
+      },
+      "email": {
+        "title": "Manajemen Email & Kalender",
+        "description": "Pengelolaan email dan jadwal untuk meningkatkan produktivitas"
+      },
+      "research": {
+        "title": "Riset Web & Pengumpulan Data",
+        "description": "Penelitian web dan pengumpulan data yang komprehensif"
+      },
+      "cloud": {
+        "title": "Organisasi File & Manajemen Cloud",
+        "description": "Pengelolaan file dan layanan cloud yang efisien"
+      },
+      "accounting": {
+        "title": "Akuntansi Dasar & Pembuatan Invoice",
+        "description": "Pengelolaan keuangan dasar dan pembuatan invoice"
+      },
+      "task": {
+        "title": "Manajemen Tugas & Proyek",
+        "description": "Manajemen tugas dan proyek yang terstruktur"
+      }
+    }
+  },
+  "contact": {
+    "title": "Hubungi Saya",
+    "description": "Tertarik untuk bekerja sama? Silakan hubungi saya melalui form di bawah ini atau melalui kontak yang tersedia.",
+    "form": {
+      "name": "Nama",
+      "email": "Email",
+      "message": "Pesan",
+      "submit": "Kirim Pesan",
+      "placeholders": {
+        "name": "Masukkan nama Anda",
+        "email": "Masukkan email Anda",
+        "message": "Tuliskan pesan Anda"
+      }
+    },
+    "direct": {
+      "title": "Kontak Langsung",
+      "description": "Anda juga dapat menghubungi saya melalui:"
+    }
+  }
+}

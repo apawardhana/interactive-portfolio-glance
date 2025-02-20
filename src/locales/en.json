@@ -1,0 +1,70 @@
+
+{
+  "hero": {
+    "title": "Virtual Assistant for",
+    "subtitle": "Your Digital Needs",
+    "description": "I help you manage administrative and digital tasks efficiently, so you can focus on growing your business.",
+    "contact": "Contact Me",
+    "portfolio": "View Portfolio"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "As an experienced Virtual Assistant, I help clients manage their administrative and digital tasks efficiently and professionally.",
+    "experience": {
+      "title": "Experience",
+      "description": "With over 3 years of experience as a Virtual Assistant, I have helped various clients from startups to medium-sized companies manage their administrative and digital tasks."
+    },
+    "skills": {
+      "title": "Skills"
+    }
+  },
+  "services": {
+    "title": "My Services",
+    "description": "I provide various virtual assistant services to help optimize your business operations.",
+    "items": {
+      "dataEntry": {
+        "title": "Data Entry & Spreadsheet Management",
+        "description": "Accurate and organized data and spreadsheet management"
+      },
+      "email": {
+        "title": "Email & Calendar Management",
+        "description": "Email and schedule management to increase productivity"
+      },
+      "research": {
+        "title": "Web Research & Data Collection",
+        "description": "Comprehensive web research and data collection"
+      },
+      "cloud": {
+        "title": "File Organization & Cloud Management",
+        "description": "Efficient file and cloud service management"
+      },
+      "accounting": {
+        "title": "Basic Accounting & Invoicing",
+        "description": "Basic financial management and invoice creation"
+      },
+      "task": {
+        "title": "Task & Project Management",
+        "description": "Structured task and project management"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Me",
+    "description": "Interested in working together? Please contact me through the form below or through the available contacts.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send Message",
+      "placeholders": {
+        "name": "Enter your name",
+        "email": "Enter your email",
+        "message": "Write your message"
+      }
+    },
+    "direct": {
+      "title": "Direct Contact",
+      "description": "You can also contact me via:"
+    }
+  }
+}

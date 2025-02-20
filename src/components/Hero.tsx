@@ -2,8 +2,11 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
+import { useTranslation } from "../hooks/useTranslation";
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="section-padding min-h-[90vh] flex items-center justify-center">
       <div className="max-w-6xl mx-auto text-center">
@@ -14,21 +17,20 @@ const Hero = () => {
           className="space-y-6"
         >
           <h1 className="heading-xl">
-            Virtual Assistant untuk
+            {t("hero.title")}
             <br />
-            <span className="text-gradient">Kebutuhan Digital Anda</span>
+            <span className="text-gradient">{t("hero.subtitle")}</span>
           </h1>
           <p className="text-lg md:text-xl max-w-2xl mx-auto text-gray-600">
-            Saya membantu Anda mengelola tugas administratif dan digital dengan efisien,
-            sehingga Anda bisa fokus pada pertumbuhan bisnis Anda.
+            {t("hero.description")}
           </p>
           <div className="flex items-center justify-center gap-4">
             <Button size="lg" className="group">
-              Hubungi Saya
+              {t("hero.contact")}
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
             <Button size="lg" variant="outline">
-              Lihat Portfolio
+              {t("hero.portfolio")}
             </Button>
           </div>
         </motion.div>
