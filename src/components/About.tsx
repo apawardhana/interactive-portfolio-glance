@@ -42,9 +42,9 @@ const About = () => {
             >
               <h3 className="text-2xl font-semibold">Pengalaman</h3>
               <p className="text-gray-600">
-                Dengan pengalaman lebih dari 3 tahun sebagai Virtual Assistant,
-                saya telah membantu berbagai klien dari startup hingga perusahaan
-                menengah dalam mengelola tugas administratif dan digital mereka.
+                Saya adalah Virtual Assistant yang detail-oriented dengan keahlian dalam data entry, web research,
+                email management, dan administrative support. Saya membantu bisnis tetap terorganisir, 
+                menghemat waktu, dan meningkatkan efisiensi dengan menangani tugas repetitif secara akurat dan profesional.
               </p>
             </motion.div>
 
